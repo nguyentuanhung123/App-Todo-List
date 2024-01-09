@@ -7,8 +7,8 @@ const Form = ({ input, setInput, todos, setTodos, editTodo, setEditTodo }) => {
     // }
 
     const updateTodo = (id, title, completed) => {
-        const newTodo = todos.map((todo) => todo.id === id ? { id, title, completed } : todo);
-        setTodos(newTodo);
+        const newTodos = todos.map((todo) => todo.id === id ? { id, title, completed } : todo);
+        setTodos(newTodos);
         setEditTodo("");
     }
 
